@@ -1,0 +1,83 @@
+{
+	"name": "simple-sprint",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+
+	"dependencies": {
+		"alt": "^0.17.6",
+		"autoprefixer-loader": "^3.1.0",
+		"babel": "^5.8.23",
+		"babel-core": "^5.8.25",
+		"babel-eslint": "^4.1.3",
+		"babel-loader": "^5.3.2",
+		"babel-plugin-react-transform": "^1.1.1",
+		"bookshelf": "^0.8.2",
+		"classnames": "^2.2.0",
+		"co": "^4.6.0",
+		"css-loader": "^0.19.0",
+		"del": "^2.0.2",
+		"ejs-compiled-loader": "^2.0.4",
+		"eslint-loader": "^1.1.0",
+		"file-loader": "^0.8.4",
+		"gulp": "^3.9.0",
+		"history": "^1.12.5",
+		"knex": "^0.8.6",
+		"koa": "^1.1.0",
+		"koa-body": "^1.3.0",
+		"koa-bodyparser": "^2.0.1",
+		"koa-ejs": "^2.0.1",
+		"koa-mount": "^1.3.0",
+		"koa-request": "^1.0.0",
+		"koa-router": "^5.2.3",
+		"koa-static": "^1.4.9",
+		"koa-webpack-dev-middleware": "^1.0.1",
+		"koa-webpack-hot-middleware": "^1.0.1",
+		"less-loader": "^2.2.1",
+		"moment": "^2.10.6",
+		"mysql": "^2.9.0",
+		"newrelic": "^1.22.1",
+		"nodemon": "^1.7.1",
+		"react": "^0.14.0",
+		"react-day-picker": "^1.0.9",
+		"react-dom": "^0.14.0",
+		"react-hot-loader": "^1.3.0",
+		"react-router": "^1.0.0-rc3",
+		"react-tools": "^0.10.0",
+		"react-transform-catch-errors": "^1.0.0",
+		"react-transform-hmr": "^1.0.1",
+		"redbox-react": "^1.1.1",
+		"style-loader": "^0.12.4",
+		"superagent": "^1.4.0",
+		"thunkify": "^2.1.2",
+		"underscore": "^1.8.3",
+		"url-loader": "^0.5.6",
+		"webpack": "^1.12.2",
+		"webpack-hot-middleware": "^2.4.1",
+		"webpack-html-plugin": "^0.1.0"
+	},
+
+	"devDependencies": {
+		"eslint": "^1.6.0",
+		"eslint-plugin-react": "^3.5.1",
+		"mocha": "^2.3.3",
+		"should": "^7.1.0",
+		"path": "^0.12.7"
+	},
+
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npm run build-server && node build/index.js",
+		"build-server": "./node_modules/.bin/gulp webpack-server",
+		"dev": "./node_modules/.bin/gulp",
+		"clean": "./node_modules/.bin/gulp clean"
+	},
+
+	"author": "",
+	"license": "ISC",
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pbmasigla/simple-sprint.git"
+	},
+}
