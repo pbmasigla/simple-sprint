@@ -1,7 +1,0 @@
-//APP FILE STRUCTURE
-
-├── node_modules 		// installed packages
-├── src 				// main app files
-|── webpack.config.js 	// config for webpack compilation
-|── package.json 		// node packages to be installed
-└── index.js 			// main entry point to app
