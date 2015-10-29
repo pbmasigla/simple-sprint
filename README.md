@@ -1,6 +1,6 @@
 
 ### Simple Sprint - A base app
-#### React + Flux implementation
+#### React + Flux implementation (http://survivejs.com/webpack_react/react_and_flux/)
 
 ----------
 
@@ -43,7 +43,7 @@ npm run dev
 └── index.js			// main entry point to app
 ```
 
-### Src file structure
+### src file structure (/src/)
 ```
 ├── client
 │		├── js
@@ -66,7 +66,7 @@ npm run dev
 └── index.js			// main file to setup app/server
 ```
 
-### Component file structure
+### Component file structure (/src/client/js/components)
 ###### Smart and dumb components: https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.9e184iahk
 ```
 └── To Do List				// container (smart component)

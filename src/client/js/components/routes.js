@@ -2,15 +2,14 @@ import { Router, IndexRoute, Route } from "react-router";
 import history from "../history";
 import {
 	SplashPage,
-	Body
+	ToDoContainer
 } from "./containers";
 
 const router = (
 	<Router history={ history }>
 		<Route path="/">
 			<IndexRoute component={ SplashPage } />
-			<Route component={ Body }>
-			</Route>
+			<Route path="to-do" component={ ToDoContainer } />
 		</Route>
 	</Router>
 );
