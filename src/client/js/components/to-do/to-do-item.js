@@ -1,3 +1,5 @@
+require("../../../less/to-do/to-do-item");
+
 export default class ToDoItem extends React.Component {
 	constructor (props) {
 		super(props);
@@ -11,8 +13,8 @@ export default class ToDoItem extends React.Component {
 	render () {
 		return (
 			<div className="to-do-item__container">
-				<span>{ this.props.item }</span>
-				<span onClick={ this.handleClick }>X</span>
+				<span className="to-do-item__text">{ this.props.item }</span>
+				<span onClick={ this.handleClick }><i className="to-do-item__close fa fa-times"/></span>
 			</div>
 		);
 	}

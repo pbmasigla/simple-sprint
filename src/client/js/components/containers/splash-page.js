@@ -2,7 +2,7 @@ export default class SplashPage extends React.Component {
 	render() {
 		return (
 			<div>
-				BOOM BOOM BOOM
+				BOOM BOOM
 			</div>
 		);
 	}

@@ -1,0 +1,28 @@
+@import "../variables";
+/********************************
+
+		To Do Input
+
+ ********************************/
+
+.to-do-input__container {
+	display: flex;
+	text-align: center;
+	
+	.to-do-input__input {
+
+	}
+
+	.to-do-input__button {
+		background-color: @red;
+		border-radius: 3px;
+		color: @white;
+		cursor: pointer;
+		padding: 8px 10px;
+		transition: all .2s;
+
+		&:hover {
+			background-color: darken(@red, 5);
+		}
+	}
+}

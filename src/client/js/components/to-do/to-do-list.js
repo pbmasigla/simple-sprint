@@ -1,3 +1,4 @@
+require("../../../less/to-do/to-do-list");
 import ToDoItem from "./to-do-item";
 
 export default class ToDoList extends React.Component {
@@ -12,6 +13,7 @@ export default class ToDoList extends React.Component {
 
 		return (
 			<div className="to-do-list__container">
+				<div className="to-do-list__background"></div>
 				<h1 className="to-do-list__header">my list</h1>
 				{ list }
 			</div>

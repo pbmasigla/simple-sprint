@@ -8,7 +8,8 @@ var clientConfig = {
 	// The entrypoint must be kept in sync with the production version
 	entry: [
 		"./src/client/js/app.js",
-		"webpack-hot-middleware/client?reload=true"
+		"webpack-hot-middleware/client?reload=true",
+
 	],
 
 	output: {
@@ -56,7 +57,7 @@ var clientConfig = {
 				include: [
 					path.join(__dirname, "src", "client", "less")
 				],
-				loaders: ["style", "css?sourceMap", "autoprefixer?browsers=last 2 version", "less?sourceMap=true"]
+				loaders: ["style", "css?sourceMap", "less?sourceMap=true"]
 			},
 			{
 				test: /\.(ttf|eot|svg)(\?[0-9]*)?$/,
@@ -65,6 +66,14 @@ var clientConfig = {
 			{
 				test: /\.jpg$/,
 				loader: "url-loader?limit=10000"
+			},
+			{
+				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				loader: "url-loader?limit=10000&minetype=application/font-woff"
+			},
+	 		{
+				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				loader: "file-loader"
 			}
 		],
 		preLoaders: [{

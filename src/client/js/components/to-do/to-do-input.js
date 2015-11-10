@@ -1,11 +1,13 @@
+require("../../../less/to-do/to-do-input");
+
 export default class ToDoInput extends React.Component {
 	constructor (props) {
 		super(props);
-		this.handleClick = this.handleClick.bind(this);
 		this.handleKeyDown = this.handleKeyDown.bind(this);
+		this.handleAddToDo = this.handleAddToDo.bind(this);
 	}
 
-	handleClick () {
+	handleAddToDo () {
 		var newToDo = ReactDOM.findDOMNode(this.refs.todo).value;
 		this.props.addToDo(newToDo);
 		ReactDOM.findDOMNode(this.refs.todo).value = "";
@@ -13,7 +15,7 @@ export default class ToDoInput extends React.Component {
 
 	handleKeyDown (e) {
 		if (e.key === "Enter") {
-			this.handleClick();
+			this.handleAddToDo();
 		}
 	}
 
@@ -25,7 +27,7 @@ export default class ToDoInput extends React.Component {
 					className="to-do-input__input"
 					onKeyDown={ this.handleKeyDown } />
 
-				<a className="to-do-input__button" onClick={ this.handleClick }>Add To Do</a>
+				<a className="to-do-input__button" onClick={ this.handleAddToDo }>Add To Do</a>
 			</div>
 		);
 	}
